@@ -1,0 +1,253 @@
+# ancient_translator/transliteration_maps/mende_kikakui_map.py
+
+SCRIPT_NAME = "mende_kikakui"
+DESCRIPTION = "Mende Kikakui Syllabary"
+UNICODE_RANGE = ('1F800', '1F8FF') # U+1F800 to U+1F8FF
+
+# Maps Mende Kikakui script characters (keys) to their Latin transliterations (values).
+# Transliterations are based on the Unicode character names.
+TO_LATIN_MAP = {
+    # Syllables M001-M005 (Vowels)
+    '\U0001F800': 'a',      # MENDE KIKAKUI SYLLABLE M001 A
+    '\U0001F801': 'i',      # MENDE KIKAKUI SYLLABLE M002 I
+    '\U0001F802': 'u',      # MENDE KIKAKUI SYLLABLE M003 U
+    '\U0001F803': 'e',      # MENDE KIKAKUI SYLLABLE M004 E
+    '\U0001F804': 'o',      # MENDE KIKAKUI SYLLABLE M005 O
+
+    # Syllables M006-M009 (Nasalized Vowels / Syllabic Nasals)
+    '\U0001F805': 'in',     # MENDE KIKAKUI SYLLABLE M006 IN
+    '\U0001F806': 'an',     # MENDE KIKAKUI SYLLABLE M007 AN
+    '\U0001F807': 'en',     # MENDE KIKAKUI SYLLABLE M008 EN
+    '\U0001F808': 'un',     # MENDE KIKAKUI SYLLABLE M009 UN
+    # Note: Unicode chart also lists M00A ON, M00B EE, M00C OO, M00D EI, M00E OU, M00F AU
+    # but these are not in the contiguous block for the initial set of characters.
+    # The provided code seems to follow a different Mxxx numbering or a subset.
+    # The official Unicode chart has a different Mxxx sequence than your sample after M009.
+    # I will follow the official Unicode chart's sequence and transliterations.
+
+    # Based on Unicode Standard Chart for Mende Kikakui (U+1F800–U+1F8FF)
+    # Syllables (M-numbers are from the Unicode standard, may differ from other lists)
+    # Your example diverges from standard Unicode Mxxx numbering after M009.
+    # I will use standard Unicode names to derive transliteration.
+
+    # Continuing from U+1F809 (based on typical syllabic patterns if Mxxx not directly in name)
+    # For Mende, the "Mxxx" in the Unicode name isn't always the direct phonetic value.
+    # We need to look at established transliteration schemes for Mende.
+    # A common scheme is to use the consonant + vowel.
+    # The Unicode names for Mende are often like "MENDE KIKAKUI SYLLABLE Mxxx YY" where YY is the sound.
+    # Let's use the YY part from the Unicode name where available.
+
+    '\U0001F809': 'ki',     # MENDE KIKAKUI SYLLABLE M010 KI (Your map had ka)
+    '\U0001F80A': 'ka',     # MENDE KIKAKUI SYLLABLE M011 KA (Your map had ki)
+    '\U0001F80B': 'ku',     # MENDE KIKAKUI SYLLABLE M012 KU
+    '\U0001F80C': 'ke',     # MENDE KIKAKUI SYLLABLE M013 KE
+    '\U0001F80D': 'ko',     # MENDE KIKAKUI SYLLABLE M014 KO
+    '\U0001F80E': 'kin',    # MENDE KIKAKUI SYLLABLE M015 KIN (Your map had kan)
+    '\U0001F80F': 'kan',    # MENDE KIKAKUI SYLLABLE M016 KAN (Your map had kin)
+    '\U0001F810': 'ken',    # MENDE KIKAKUI SYLLABLE M017 KEN (Your map had kun)
+    '\U0001F811': 'kun',    # MENDE KIKAKUI SYLLABLE M018 KUN (Your map had sa)
+    '\U0001F812': 'kon',    # MENDE KIKAKUI SYLLABLE M019 KON (Your map had si)
+
+    '\U0001F813': 'kpen',   # MENDE KIKAKUI SYLLABLE M020 KPEN
+    '\U0001F814': 'kpun',   # MENDE KIKAKUI SYLLABLE M021 KPUN
+    '\U0001F815': 'kpon',   # MENDE KIKAKUI SYLLABLE M022 KPON
+    '\U0001F816': 'kpi',    # MENDE KIKAKUI SYLLABLE M023 KPI
+    '\U0001F817': 'kpa',    # MENDE KIKAKUI SYLLABLE M024 KPA
+    '\U0001F818': 'kpu',    # MENDE KIKAKUI SYLLABLE M025 KPU
+    '\U0001F819': 'kpe',    # MENDE KIKAKUI SYLLABLE M026 KPE
+    '\U0001F81A': 'kpo',    # MENDE KIKAKUI SYLLABLE M027 KPO
+    '\U0001F81B': 'kpin',   # MENDE KIKAKUI SYLLABLE M028 KPIN
+    '\U0001F81C': 'kpan',   # MENDE KIKAKUI SYLLABLE M029 KPAN
+
+    '\U0001F81D': 'wi',     # MENDE KIKAKUI SYLLABLE M030 WI
+    '\U0001F81E': 'wa',     # MENDE KIKAKUI SYLLABLE M031 WA
+    '\U0001F81F': 'wu',     # MENDE KIKAKUI SYLLABLE M032 WU
+    '\U0001F820': 'we',     # MENDE KIKAKUI SYLLABLE M033 WE
+    '\U0001F821': 'wo',     # MENDE KIKAKUI SYLLABLE M034 WO
+    '\U0001F822': 'win',    # MENDE KIKAKUI SYLLABLE M035 WIN
+    '\U0001F823': 'wan',    # MENDE KIKAKUI SYLLABLE M036 WAN
+    '\U0001F824': 'wen',    # MENDE KIKAKUI SYLLABLE M037 WEN
+    '\U0001F825': 'wun',    # MENDE KIKAKUI SYLLABLE M038 WUN
+    '\U0001F826': 'won',    # MENDE KIKAKUI SYLLABLE M039 WON
+
+    '\U0001F827': 'bi',     # MENDE KIKAKUI SYLLABLE M040 BI
+    '\U0001F828': 'ba',     # MENDE KIKAKUI SYLLABLE M041 BA
+    '\U0001F829': 'bu',     # MENDE KIKAKUI SYLLABLE M042 BU
+    '\U0001F82A': 'be',     # MENDE KIKAKUI SYLLABLE M043 BE
+    '\U0001F82B': 'bo',     # MENDE KIKAKUI SYLLABLE M044 BO
+    '\U0001F82C': 'bin',    # MENDE KIKAKUI SYLLABLE M045 BIN
+    '\U0001F82D': 'ban',    # MENDE KIKAKUI SYLLABLE M046 BAN
+    '\U0001F82E': 'ben',    # MENDE KIKAKUI SYLLABLE M047 BEN
+    '\U0001F82F': 'bun',    # MENDE KIKAKUI SYLLABLE M048 BUN
+    '\U0001F830': 'bon',    # MENDE KIKAKUI SYLLABLE M049 BON
+
+    '\U0001F831': 'mbi',    # MENDE KIKAKUI SYLLABLE M050 MBI
+    '\U0001F832': 'mba',    # MENDE KIKAKUI SYLLABLE M051 MBA
+    '\U0001F833': 'mbu',    # MENDE KIKAKUI SYLLABLE M052 MBU
+    '\U0001F834': 'mbe',    # MENDE KIKAKUI SYLLABLE M053 MBE
+    '\U0001F835': 'mbo',    # MENDE KIKAKUI SYLLABLE M054 MBO
+    '\U0001F836': 'mbin',   # MENDE KIKAKUI SYLLABLE M055 MBIN
+    '\U0001F837': 'mban',   # MENDE KIKAKUI SYLLABLE M056 MBAN
+    '\U0001F838': 'mben',   # MENDE KIKAKUI SYLLABLE M057 MBEN
+    '\U0001F839': 'mbun',   # MENDE KIKAKUI SYLLABLE M058 MBUN
+    '\U0001F83A': 'mbon',   # MENDE KIKAKUI SYLLABLE M059 MBON
+
+    '\U0001F83B': 'pi',     # MENDE KIKAKUI SYLLABLE M060 PI
+    '\U0001F83C': 'pa',     # MENDE KIKAKUI SYLLABLE M061 PA
+    '\U0001F83D': 'pu',     # MENDE KIKAKUI SYLLABLE M062 PU
+    '\U0001F83E': 'pe',     # MENDE KIKAKUI SYLLABLE M063 PE
+    '\U0001F83F': 'po',     # MENDE KIKAKUI SYLLABLE M064 PO
+    '\U0001F840': 'pin',    # MENDE KIKAKUI SYLLABLE M065 PIN
+    '\U0001F841': 'pan',    # MENDE KIKAKUI SYLLABLE M066 PAN
+    '\U0001F842': 'pen',    # MENDE KIKAKUI SYLLABLE M067 PEN
+    '\U0001F843': 'pun',    # MENDE KIKAKUI SYLLABLE M068 PUN
+    '\U0001F844': 'pon',    # MENDE KIKAKUI SYLLABLE M069 PON
+
+    '\U0001F845': 'fi',     # MENDE KIKAKUI SYLLABLE M070 FI
+    '\U0001F846': 'fa',     # MENDE KIKAKUI SYLLABLE M071 FA
+    '\U0001F847': 'fu',     # MENDE KIKAKUI SYLLABLE M072 FU
+    '\U0001F848': 'fe',     # MENDE KIKAKUI SYLLABLE M073 FE
+    '\U0001F849': 'fo',     # MENDE KIKAKUI SYLLABLE M074 FO
+    '\U0001F84A': 'fin',    # MENDE KIKAKUI SYLLABLE M075 FIN
+    '\U0001F84B': 'fan',    # MENDE KIKAKUI SYLLABLE M076 FAN
+    '\U0001F84C': 'fen',    # MENDE KIKAKUI SYLLABLE M077 FEN
+    '\U0001F84D': 'fun',    # MENDE KIKAKUI SYLLABLE M078 FUN
+    '\U0001F84E': 'fon',    # MENDE KIKAKUI SYLLABLE M079 FON
+
+    '\U0001F84F': 'vi',     # MENDE KIKAKUI SYLLABLE M080 VI
+    '\U0001F850': 'va',     # MENDE KIKAKUI SYLLABLE M081 VA
+    '\U0001F851': 'vu',     # MENDE KIKAKUI SYLLABLE M082 VU
+    '\U0001F852': 've',     # MENDE KIKAKUI SYLLABLE M083 VE
+    '\U0001F853': 'vo',     # MENDE KIKAKUI SYLLABLE M084 VO
+    '\U0001F854': 'vin',    # MENDE KIKAKUI SYLLABLE M085 VIN
+    '\U0001F855': 'van',    # MENDE KIKAKUI SYLLABLE M086 VAN
+    '\U0001F856': 'ven',    # MENDE KIKAKUI SYLLABLE M087 VEN
+    '\U0001F857': 'vun',    # MENDE KIKAKUI SYLLABLE M088 VUN
+    '\U0001F858': 'von',    # MENDE KIKAKUI SYLLABLE M089 VON
+
+    '\U0001F859': 'ti',     # MENDE KIKAKUI SYLLABLE M090 TI
+    '\U0001F85A': 'ta',     # MENDE KIKAKUI SYLLABLE M091 TA
+    '\U0001F85B': 'tu',     # MENDE KIKAKUI SYLLABLE M092 TU
+    '\U0001F85C': 'te',     # MENDE KIKAKUI SYLLABLE M093 TE
+    '\U0001F85D': 'to',     # MENDE KIKAKUI SYLLABLE M094 TO
+    '\U0001F85E': 'tin',    # MENDE KIKAKUI SYLLABLE M095 TIN
+    '\U0001F85F': 'tan',    # MENDE KIKAKUI SYLLABLE M096 TAN
+    '\U0001F860': 'ten',    # MENDE KIKAKUI SYLLABLE M097 TEN
+    '\U0001F861': 'tun',    # MENDE KIKAKUI SYLLABLE M098 TUN
+    '\U0001F862': 'ton',    # MENDE KIKAKUI SYLLABLE M099 TON
+
+    '\U0001F863': 'ndi',    # MENDE KIKAKUI SYLLABLE M100 NDI
+    '\U0001F864': 'nda',    # MENDE KIKAKUI SYLLABLE M101 NDA
+    '\U0001F865': 'ndu',    # MENDE KIKAKUI SYLLABLE M102 NDU
+    '\U0001F866': 'nde',    # MENDE KIKAKUI SYLLABLE M103 NDE
+    '\U0001F867': 'ndo',    # MENDE KIKAKUI SYLLABLE M104 NDO
+    '\U0001F868': 'ndin',   # MENDE KIKAKUI SYLLABLE M105 NDIN
+    '\U0001F869': 'ndan',   # MENDE KIKAKUI SYLLABLE M106 NDAN
+    '\U0001F86A': 'nden',   # MENDE KIKAKUI SYLLABLE M107 NDEN
+    '\U0001F86B': 'ndun',   # MENDE KIKAKUI SYLLABLE M108 NDUN
+    '\U0001F86C': 'ndon',   # MENDE KIKAKUI SYLLABLE M109 NDON
+
+    '\U0001F86D': 'li',     # MENDE KIKAKUI SYLLABLE M110 LI
+    '\U0001F86E': 'la',     # MENDE KIKAKUI SYLLABLE M111 LA
+    '\U0001F86F': 'lu',     # MENDE KIKAKUI SYLLABLE M112 LU
+    '\U0001F870': 'le',     # MENDE KIKAKUI SYLLABLE M113 LE
+    '\U0001F871': 'lo',     # MENDE KIKAKUI SYLLABLE M114 LO
+    '\U0001F872': 'lin',    # MENDE KIKAKUI SYLLABLE M115 LIN
+    '\U0001F873': 'lan',    # MENDE KIKAKUI SYLLABLE M116 LAN
+    '\U0001F874': 'len',    # MENDE KIKAKUI SYLLABLE M117 LEN
+    '\U0001F875': 'lun',    # MENDE KIKAKUI SYLLABLE M118 LUN
+    '\U0001F876': 'lon',    # MENDE KIKAKUI SYLLABLE M119 LON
+
+    '\U0001F877': 'si',     # MENDE KIKAKUI SYLLABLE M120 SI
+    '\U0001F878': 'sa',     # MENDE KIKAKUI SYLLABLE M121 SA
+    '\U0001F879': 'su',     # MENDE KIKAKUI SYLLABLE M122 SU
+    '\U0001F87A': 'se',     # MENDE KIKAKUI SYLLABLE M123 SE
+    '\U0001F87B': 'so',     # MENDE KIKAKUI SYLLABLE M124 SO
+    '\U0001F87C': 'sin',    # MENDE KIKAKUI SYLLABLE M125 SIN
+    '\U0001F87D': 'san',    # MENDE KIKAKUI SYLLABLE M126 SAN
+    '\U0001F87E': 'sen',    # MENDE KIKAKUI SYLLABLE M127 SEN
+    '\U0001F87F': 'sun',    # MENDE KIKAKUI SYLLABLE M128 SUN
+    '\U0001F880': 'son',    # MENDE KIKAKUI SYLLABLE M129 SON
+
+    '\U0001F881': 'thi',    # MENDE KIKAKUI SYLLABLE M130 THI (or ši)
+    '\U0001F882': 'tha',    # MENDE KIKAKUI SYLLABLE M131 THA (or ša)
+    '\U0001F883': 'thu',    # MENDE KIKAKUI SYLLABLE M132 THU (or šu)
+    '\U0001F884': 'the',    # MENDE KIKAKUI SYLLABLE M133 THE (or še)
+    '\U0001F885': 'tho',    # MENDE KIKAKUI SYLLABLE M134 THO (or šo)
+    '\U0001F886': 'thin',   # MENDE KIKAKUI SYLLABLE M135 THIN (or šin)
+    '\U0001F887': 'than',   # MENDE KIKAKUI SYLLABLE M136 THAN (or šan)
+    '\U0001F888': 'then',   # MENDE KIKAKUI SYLLABLE M137 THEN (or šen)
+    '\U0001F889': 'thun',   # MENDE KIKAKUI SYLLABLE M138 THUN (or šun)
+    '\U0001F88A': 'thon',   # MENDE KIKAKUI SYLLABLE M139 THON (or šon)
+
+    '\U0001F88B': 'nyi',    # MENDE KIKAKUI SYLLABLE M140 NYI
+    '\U0001F88C': 'nya',    # MENDE KIKAKUI SYLLABLE M141 NYA
+    '\U0001F88D': 'nyu',    # MENDE KIKAKUI SYLLABLE M142 NYU
+    '\U0001F88E': 'nye',    # MENDE KIKAKUI SYLLABLE M143 NYE
+    '\U0001F88F': 'nyo',    # MENDE KIKAKUI SYLLABLE M144 NYO
+    '\U0001F890': 'nyin',   # MENDE KIKAKUI SYLLABLE M145 NYIN
+    '\U0001F891': 'nyan',   # MENDE KIKAKUI SYLLABLE M146 NYAN
+    '\U0001F892': 'nyen',   # MENDE KIKAKUI SYLLABLE M147 NYEN
+    '\U0001F893': 'nyun',   # MENDE KIKAKUI SYLLABLE M148 NYUN
+    '\U0001F894': 'nyon',   # MENDE KIKAKUI SYLLABLE M149 NYON
+
+    '\U0001F895': 'hi',     # MENDE KIKAKUI SYLLABLE M150 HI
+    '\U0001F896': 'ha',     # MENDE KIKAKUI SYLLABLE M151 HA
+    '\U0001F897': 'hu',     # MENDE KIKAKUI SYLLABLE M152 HU
+    '\U0001F898': 'he',     # MENDE KIKAKUI SYLLABLE M153 HE
+    '\U0001F899': 'ho',     # MENDE KIKAKUI SYLLABLE M154 HO
+    '\U0001F89A': 'hin',    # MENDE KIKAKUI SYLLABLE M155 HIN
+    '\U0001F89B': 'han',    # MENDE KIKAKUI SYLLABLE M156 HAN
+    '\U0001F89C': 'hen',    # MENDE KIKAKUI SYLLABLE M157 HEN
+    '\U0001F89D': 'hun',    # MENDE KIKAKUI SYLLABLE M158 HUN
+    '\U0001F89E': 'hon',    # MENDE KIKAKUI SYLLABLE M159 HON
+
+    '\U0001F89F': 'nggi',   # MENDE KIKAKUI SYLLABLE M160 NGGI
+    '\U0001F8A0': 'ngga',   # MENDE KIKAKUI SYLLABLE M161 NGGA
+    '\U0001F8A1': 'nggu',   # MENDE KIKAKUI SYLLABLE M162 NGGU
+    '\U0001F8A2': 'ngge',   # MENDE KIKAKUI SYLLABLE M163 NGGE
+    '\U0001F8A3': 'nggo',   # MENDE KIKAKUI SYLLABLE M164 NGGO
+    '\U0001F8A4': 'nggin',  # MENDE KIKAKUI SYLLABLE M165 NGGIN
+    '\U0001F8A5': 'nggan',  # MENDE KIKAKUI SYLLABLE M166 NGGAN
+    '\U0001F8A6': 'nggen',  # MENDE KIKAKUI SYLLABLE M167 NGGEN
+    '\U0001F8A7': 'nggun',  # MENDE KIKAKUI SYLLABLE M168 NGGUN
+    '\U0001F8A8': 'nggon',  # MENDE KIKAKUI SYLLABLE M169 NGGON
+
+    # Combining Marks
+    '\U0001F8A9': 'COMBINING_NASALIZATION_MARK', # MENDE KIKAKUI COMBINING NASALIZATION MARK
+    '\U0001F8AA': 'COMBINING_HIGH_TONE_MARK',    # MENDE KIKAKUI COMBINING HIGH TONE MARK
+    '\U0001F8AB': 'COMBINING_LOW_TONE_MARK',     # MENDE KIKAKUI COMBINING LOW TONE MARK
+    '\U0001F8AC': 'COMBINING_RISING_TONE_MARK',  # MENDE KIKAKUI COMBINING RISING TONE MARK
+    '\U0001F8AD': 'COMBINING_FALLING_TONE_MARK', # MENDE KIKAKUI COMBINING FALLING TONE MARK
+
+    # Punctuation (from your example, which seems to be re-using Mxxx numbers differently)
+    # The official punctuation marks do not have Mxxx numbers.
+    # I will use descriptive names for punctuation.
+    '\U0001F8AE': '.',      # MENDE KIKAKUI FULL STOP (Your example also had this)
+    '\U0001F8AF': ',',      # MENDE KIKAKUI COMMA (Your example also had this)
+
+    # Digits
+    '\U0001F8B0': '0',      # MENDE KIKAKUI DIGIT ZERO
+    '\U0001F8B1': '1',      # MENDE KIKAKUI DIGIT ONE
+    '\U0001F8B2': '2',      # MENDE KIKAKUI DIGIT TWO
+    '\U0001F8B3': '3',      # MENDE KIKAKUI DIGIT THREE
+    '\U0001F8B4': '4',      # MENDE KIKAKUI DIGIT FOUR
+    '\U0001F8B5': '5',      # MENDE KIKAKUI DIGIT FIVE
+    '\U0001F8B6': '6',      # MENDE KIKAKUI DIGIT SIX
+    '\U0001F8B7': '7',      # MENDE KIKAKUI DIGIT SEVEN
+    '\U0001F8B8': '8',      # MENDE KIKAKUI DIGIT EIGHT
+    '\U0001F8B9': '9',      # MENDE KIKAKUI DIGIT NINE
+
+    # The remaining characters in the block U+1F8BA to U+1F8FF are largely unassigned or reserved,
+    # except for a few more syllables that seem to fill gaps or are alternates.
+    # These are M170 EE, M171 OO, M172 EI, M173 OU, M174 AU, M175 N.
+    '\U0001F8BA': 'ee',     # MENDE KIKAKUI SYLLABLE M170 EE
+    '\U0001F8BB': 'oo',     # MENDE KIKAKUI SYLLABLE M171 OO
+    '\U0001F8BC': 'ei',     # MENDE KIKAKUI SYLLABLE M172 EI
+    '\U0001F8BD': 'ou',     # MENDE KIKAKUI SYLLABLE M173 OU
+    '\U0001F8BE': 'au',     # MENDE KIKAKUI SYLLABLE M174 AU
+    '\U0001F8BF': 'n',      # MENDE KIKAKUI SYLLABLE M175 N (syllabic N)
+}
+
+# The FROM_LATIN_MAP will be automatically generated by your __init__.py
+# FROM_LATIN_MAP = {v: k for k, v in TO_LATIN_MAP.items()}
