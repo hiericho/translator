@@ -157,8 +157,6 @@ pydivert==2.1.0
 pyespn==0.3.3
 PyGetWindow==0.0.9
 Pygments==2.19.1
-# Editable install with no version control (pykick==0.1.0)
--e c:\users\my pc\desktop\kick
 pylint==3.3.6
 pymdown-extensions==10.14.3
 PyMsgBox==1.0.9
